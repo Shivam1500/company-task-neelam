@@ -1,0 +1,15 @@
+
+function input (price,quantity)
+{
+if (price > 1000)
+{
+let totexp = ((price*quantity)-(0.1*price))
+console.log("total exp",totexp);
+}
+else {
+totexp =price*quantity;
+console.log("total exp",totexp);
+}
+}
+
+input(2000,2);
