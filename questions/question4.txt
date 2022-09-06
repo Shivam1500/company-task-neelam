@@ -1,0 +1,11 @@
+
+// reading file asynchrounous
+
+async function readFile(){
+    const data = await fs.promises.readFile(__dirname + "/filejson","utf-8");
+    return JSON.parse(data)
+}
+
+(async () =>{
+    console.log(await readFile());
+})();

@@ -1,15 +1,16 @@
 
-function input (price,quantity)
-{
-if (price > 1000)
-{
-let totexp = ((price*quantity)-(0.1*price))
-console.log("total exp",totexp);
+var itemPrice = 1200;
+var itemQty = 20;
+var totExp;
+if(itemPrice > 1000){
+    totExp = ((itemQty * itemPrice)-(0.1*itemQty * itemPrice))
+    console.log("Total exp with discount : " , totExp);
 }
-else {
-totexp =price*quantity;
-console.log("total exp",totexp);
-}
+else{
+    totExp = (itemQty * itemPrice)
+    console.log("Total exp without discount : ",totExp)
 }
 
-input(2000,2);
+
+
+output:-  Total exp with discount :  21600 
